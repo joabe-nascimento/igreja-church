@@ -13,9 +13,9 @@ import { FaPhone, FaEnvelope } from "react-icons/fa";
 
 const NAV_ITEMS = [
   { label: "Inicio", href: "/" },
-  { label: "Quem Somos", href: "/" },
-  { label: "Serviços", href: "/" },
-  { label: "Ações", href: "/" },
+  { label: "Propósitos", href: "/quemsomos" },
+  { label: "Serviços", href: "/serviços" },
+  { label: "Ações", href: "/ações" },
   {
     label: "Contatos",
     href: "/contact",
@@ -66,25 +66,9 @@ export const DesktopNav = () => {
                   cursor="pointer"
                   fontFamily="Poppins, sans-serif" // Fonte Poppins
                   whiteSpace="nowrap" // Evita quebra de texto
-                  _before={{
-                    content: "''",
-                    position: "absolute",
-                    bottom: "-2px",
-                    left: "0",
-                    width: "100%",
-                    height: "1px",
-                    backgroundColor: linkHoverColor,
-                    transform: "scaleX(0)",
-                    transformOrigin: "bottom right",
-                    transition: "transform 0.4s ease-in-out", // Animação ao passar o mouse
-                  }}
                   _hover={{
                     textDecoration: "none",
                     color: linkHoverColor,
-                    _before: {
-                      transform: "scaleX(1)",
-                      transformOrigin: "bottom left",
-                    },
                   }}
                   transition={"all 0.3s ease"}
                   onClick={() => handleClick(navItem.href)}
@@ -114,25 +98,9 @@ export const DesktopNav = () => {
                         cursor="pointer"
                         fontFamily="Poppins, sans-serif"
                         whiteSpace="nowrap" // Evita quebra de texto
-                        _before={{
-                          content: "''",
-                          position: "absolute",
-                          bottom: "-2px",
-                          left: "0",
-                          width: "100%",
-                          height: "1px",
-                          backgroundColor: linkHoverColor,
-                          transform: "scaleX(0)",
-                          transformOrigin: "bottom right",
-                          transition: "transform 0.4s ease-in-out",
-                        }}
                         _hover={{
                           textDecoration: "none",
                           color: linkHoverColor,
-                          _before: {
-                            transform: "scaleX(1)",
-                            transformOrigin: "bottom left",
-                          },
                         }}
                         transition={"all 0.2s ease"}
                         onClick={() => handleClick(child.href)}

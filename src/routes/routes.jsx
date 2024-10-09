@@ -4,6 +4,9 @@ import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import WithSubnavigation from "../components/navigation";
 import Home from "../pages/Home";
 import FaleConosco from "../pages/FaleConosco";
+import QuemSomos from "../pages/Propositos";
+import Serviços from "../pages/Serviços";
+import Ações from "../pages/Ações";
 
 const AppRoutes = () => {
   return (
@@ -12,6 +15,9 @@ const AppRoutes = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<FaleConosco />} />
+        <Route path="/quemsomos" element={<QuemSomos />} />
+        <Route path="/serviços" element={<Serviços />} />
+        <Route path="/ações" element={<Ações />} />
       </Routes>
     </Router>
   );
