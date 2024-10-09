@@ -77,7 +77,7 @@ export default function Ações() {
                 color={"gray.500"}
                 textAlign="left"
               >
-                <Text fontWeight="bold">Sobre a Renovame Church:</Text>
+                <Text fontWeight="bold">Ações da Renovame Church:</Text>
                 <Text mt={2}>
                   A Renovame Church está comprometida em fazer a diferença na
                   vida das pessoas através de diversas ações sociais e
