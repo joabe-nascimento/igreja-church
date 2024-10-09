@@ -66,7 +66,7 @@ const Footer = () => {
             <Text
               fontSize="md"
               color="gray.300"
-              textAlign={{ base: "center", lg: "left" }}
+              textAlign={{ base: "left", lg: "left" }}
             >
               Avenida Noide Cerqueira, 4048, Bairro Sim, Feira de Santana, BA,
               44085-052

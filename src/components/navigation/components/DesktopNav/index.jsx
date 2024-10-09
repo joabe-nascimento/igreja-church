@@ -13,6 +13,7 @@ import { FaPhone, FaEnvelope } from "react-icons/fa";
 
 const NAV_ITEMS = [
   { label: "Inicio", href: "/" },
+  { label: "Quem Somos", href: "/" },
   { label: "Serviços", href: "/" },
   { label: "Ações", href: "/" },
   {
@@ -50,19 +51,21 @@ export const DesktopNav = () => {
 
   return (
     <Flex justifyContent="flex-end">
-      <Stack direction={"row"} spacing={4}>
+      <Stack direction={"row"} spacing={6} align="center">
+        {" "}
+        {/* Ajustado o spacing */}
         {NAV_ITEMS.map((navItem) => (
           <Box key={navItem.label} position="relative">
             <Popover trigger={"hover"} placement={"bottom-start"}>
               <PopoverTrigger>
                 <Box
-                  p={1}
+                  p={2}
                   fontSize={"md"}
                   fontWeight={600}
                   color={linkColor}
-                  position="relative"
                   cursor="pointer"
-                  fontFamily="Poppins, sans-serif" // Adiciona a fonte Poppins
+                  fontFamily="Poppins, sans-serif" // Fonte Poppins
+                  whiteSpace="nowrap" // Evita quebra de texto
                   _before={{
                     content: "''",
                     position: "absolute",
@@ -73,7 +76,7 @@ export const DesktopNav = () => {
                     backgroundColor: linkHoverColor,
                     transform: "scaleX(0)",
                     transformOrigin: "bottom right",
-                    transition: "transform 0.4s ease-in-out", // Ajusta a animação
+                    transition: "transform 0.4s ease-in-out", // Animação ao passar o mouse
                   }}
                   _hover={{
                     textDecoration: "none",
@@ -108,9 +111,9 @@ export const DesktopNav = () => {
                         color={linkColor}
                         display={"flex"}
                         alignItems={"center"}
-                        position="relative"
                         cursor="pointer"
-                        fontFamily="Poppins, sans-serif" // Adiciona a fonte Poppins nos itens do menu
+                        fontFamily="Poppins, sans-serif"
+                        whiteSpace="nowrap" // Evita quebra de texto
                         _before={{
                           content: "''",
                           position: "absolute",
@@ -121,7 +124,7 @@ export const DesktopNav = () => {
                           backgroundColor: linkHoverColor,
                           transform: "scaleX(0)",
                           transformOrigin: "bottom right",
-                          transition: "transform 0.4s ease-in-out", // Ajusta a animação
+                          transition: "transform 0.4s ease-in-out",
                         }}
                         _hover={{
                           textDecoration: "none",

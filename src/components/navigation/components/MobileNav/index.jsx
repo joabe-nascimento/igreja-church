@@ -3,7 +3,9 @@ import { MobileNavItem } from "../MobileSubNav";
 
 const NAV_ITEMS = [
   { label: "Inicio", href: "/" },
-  { label: "Hórarios", href: "/about" },
+  { label: "Quem Somos", href: "/" },
+  { label: "Serviços", href: "/" },
+  { label: "Ações", href: "/" },
   { label: "Contatos", href: "/contact" },
 ];
 
