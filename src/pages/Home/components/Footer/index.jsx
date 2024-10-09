@@ -79,10 +79,10 @@ const Footer = () => {
               Horário de Funcionamento
             </Text>
             <Text fontSize="md">Segunda FECHADO</Text>
-            <Text fontSize="md">Terça 19:30 às 17:00</Text>
+            <Text fontSize="md">Terça 17:00 às 19:30</Text>
             <Text fontSize="md">Quarta FECHADO</Text>
             <Text fontSize="md">Quinta FECHADO</Text>
-            <Text fontSize="md">Sexta: 19:30 às 17:00</Text>
+            <Text fontSize="md">Sexta: 17:30 às 19:30</Text>
             <Text fontSize="md">
               Sábado: 15:00 às 17:00 <br />
               18:00 às 20:00
