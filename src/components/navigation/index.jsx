@@ -65,7 +65,7 @@ export default function WithSubnavigation() {
               </Link>
             </Flex> */}
 
-            <Flex
+            {/* <Flex
               flex={{ base: 1, md: "auto" }}
               ml={{ base: -2 }}
               display={{ base: "flex", md: "none" }}
@@ -85,7 +85,7 @@ export default function WithSubnavigation() {
                 _hover={{ bg: useColorModeValue("gray.100", "gray.700") }}
                 transition={"background 0.3s ease"}
               />
-            </Flex>
+            </Flex> */}
 
                   {/* MENUS DO NAVBAR */}
             {/* <Flex
