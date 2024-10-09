@@ -60,7 +60,7 @@ export default function WithSubnavigation() {
               align={"center"}
               justify={{ base: "center", md: "flex-start" }} // Alinhamento ajustado para "flex-start"
               flex={{ base: "auto", md: 3 }}
-              ml={{ base: -120, md: 5 }} // Margem esquerda ajustada no desktop
+              ml={{ base: -100, md: 5 }} // Margem esquerda ajustada no desktop
             >
               <Link to="/">
                 <Image
