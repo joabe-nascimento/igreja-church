@@ -68,7 +68,7 @@ export default function FaleConosco() {
                 </Flex>
                 <Flex justify="flex-start" w="full">
                   <Text fontWeight="bold">Terça:</Text>
-                  <Text ml={2}>19:30 às 17:00</Text>
+                  <Text ml={2}>17:00 às 19:30</Text>
                 </Flex>
                 <Flex justify="flex-start" w="full">
                   <Text fontWeight="bold">Quarta:</Text>
@@ -80,7 +80,7 @@ export default function FaleConosco() {
                 </Flex>
                 <Flex justify="flex-start" w="full">
                   <Text fontWeight="bold">Sexta:</Text>
-                  <Text ml={2}>19:30 às 17:00</Text>
+                  <Text ml={2}>17:00 às 19:30</Text>
                 </Flex>
                 <Flex justify="flex-start" w="full">
                   <Text fontWeight="bold">Sábado:</Text>
