@@ -1,7 +1,7 @@
 "use client";
 
 import { Flex, Stack, Image } from "@chakra-ui/react";
-import FeedbackHeader from "./components/FeedbackHeader";
+import FeedbackHeader from "./components/batismo";
 
 export default function Feedback() {
   return (

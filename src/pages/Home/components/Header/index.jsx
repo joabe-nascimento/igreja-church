@@ -1,14 +1,6 @@
 "use client";
+import { Box, Flex, VStack, useBreakpointValue } from "@chakra-ui/react";
 import { useState } from "react";
-import {
-  Button,
-  Flex,
-  VStack,
-  useBreakpointValue,
-  Box,
-  IconButton,
-} from "@chakra-ui/react";
-import { ArrowBackIcon, ArrowForwardIcon } from "@chakra-ui/icons";
 
 // Importe suas imagens
 import carroselimg1 from "../../../../assets/carroselimg1.jpg";

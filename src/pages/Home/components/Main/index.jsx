@@ -2,7 +2,7 @@
 import { Container } from "@chakra-ui/react";
 import Cards from "../../../../components/cardsComponents";
 import WithSubnavigation from "../../../../components/navigation";
-import Feedback from "../../../../components/opportunityComponents";
+import Feedback from "../../../../components/componentBatismo";
 
 
 const sections = [

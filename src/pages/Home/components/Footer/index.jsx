@@ -1,5 +1,6 @@
 import {
   Box,
+  Button,
   Container,
   Divider,
   SimpleGrid,
@@ -8,6 +9,7 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 import data71 from "../../../../assets/data71.png";
+import { FaWhatsapp } from "react-icons/fa";
 
 const Logo = (props) => {
   return <img src={data71} alt="Logo" width={180} height={45} {...props} />;
@@ -25,11 +27,11 @@ const Footer = () => {
       <Container
         maxW={{ base: "container.sm", md: "container.md", lg: "container.xl" }}
       >
-        <Stack align="center" mb={10}>
-          {/* <Text fontSize="2xl" fontWeight="bold" color="white">
+        {/* <Stack align="center" mb={10}>
+          <Text fontSize="2xl" fontWeight="bold" color="white">
             Site Institucional
-          </Text> */}
-        </Stack>
+          </Text>
+        </Stack> */}
 
         <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} spacing={10} mb={10}>
           {/* Seção de Contato */}
@@ -94,13 +96,12 @@ const Footer = () => {
 
         <Divider borderColor="gray.600" mb={8} />
 
-        {/* Logo e Direitos Autorais */}
-        <Stack spacing={4} align="center" mt={8}>
-          {/* <Logo /> */}
-          {/* <Text fontSize="sm" color="gray.400">
+        {/* <Stack spacing={4} align="center" mt={8}>
+          <Logo />
+          <Text fontSize="sm" color="gray.400">
             © {new Date().getFullYear()} Data7. Todos os direitos reservados.
-          </Text> */}
-        </Stack>
+          </Text>
+        </Stack> */}
       </Container>
     </Box>
   );

@@ -1,22 +1,32 @@
 import { Heading, Stack, Text } from "@chakra-ui/react";
-import { motion } from "framer-motion"; // Importando framer-motion para animação
+import { motion, useAnimation } from "framer-motion";
+import { useEffect } from "react";
+import { useInView } from "react-intersection-observer"; // Hook para detectar se o componente está em exibição
 
 const FeedbackHeader = () => {
-  // Número de telefone e mensagem
-  const whatsappNumber = "+5575999194533"; // Substitua pelo número do WhatsApp desejado
-  const whatsappMessage = "Olá, gostaria de saber mais sobre seus serviços.";
+  const controls = useAnimation(); // Controla a animação
+  const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 }); // Detecta se o elemento está em exibição
 
-  // Link para o WhatsApp com o número e a mensagem
+  // Aciona a animação quando o componente entra em exibição
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [controls, inView]);
+
+  const whatsappNumber = "+5575991016263";
+  const whatsappMessage = "Olá, gostaria de saber mais sobre seus serviços.";
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
     whatsappMessage
   )}`;
 
-  // Componente de animação usando Framer Motion
+  // Animações com Framer Motion
   const MotionHeading = motion(Heading);
   const MotionText = motion(Text);
 
   return (
     <Stack
+      ref={ref} // Ref necessário para detectar visibilidade
       spacing={4}
       w={"full"}
       maxW={"lg"}
@@ -24,11 +34,15 @@ const FeedbackHeader = () => {
       mb={{ base: 4, md: 0 }}
       align="flex-start"
     >
-      {/* Título animado com borda à esquerda */}
+      {/* Título animado */}
       <MotionHeading
         fontSize={{ base: "2xl", md: "4xl", lg: "5xl" }}
-        initial={{ opacity: 0, x: -100 }}
-        animate={{ opacity: 1, x: 0 }}
+        initial={{ opacity: 0, x: -100 }} // Estado inicial fora da tela
+        animate={controls}
+        variants={{
+          visible: { opacity: 1, x: 0 }, // Animação ao entrar em view
+          hidden: { opacity: 0, x: -100 }, // Volta ao estado original
+        }}
         transition={{ duration: 0.6 }}
       >
         <Text
@@ -39,10 +53,10 @@ const FeedbackHeader = () => {
           _before={{
             content: "''",
             position: "absolute",
-            height: "100%", // Borda esquerda do tamanho do título
+            height: "100%",
             width: "5px",
-            bg: "red.400", // Cor da borda
-            left: "-10px", // Colocar a borda fora do texto
+            bg: "red.400",
+            left: "-10px",
             top: 0,
             borderRadius: "full",
           }}
@@ -60,13 +74,17 @@ const FeedbackHeader = () => {
         </Text>
       </MotionHeading>
 
-      {/* Texto com animação */}
+      {/* Texto animado */}
       <MotionText
         fontSize={{ base: "lg", md: "xl" }}
         color={"gray.600"}
         textAlign="left"
         initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
+        animate={controls}
+        variants={{
+          visible: { opacity: 1 },
+          hidden: { opacity: 0 },
+        }}
         transition={{ duration: 0.8, delay: 0.2 }}
       >
         O batismo representa um novo nascimento, uma transformação profunda e
