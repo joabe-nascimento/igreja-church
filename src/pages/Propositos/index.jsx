@@ -3,6 +3,7 @@ import { Button, Flex, Heading, Image, Stack, Text } from "@chakra-ui/react";
 // import meuHorarioImage from "../../assets/horario.png"; // Substitua pelo caminho da nova imagem
 import Footer from "../Home/components/Footer"; // Certifique-se de que o caminho do Footer esteja correto
 import ScrollToTopButton from "../Home/components/ScrollToTopButton";
+import SectionSoluctions from "../../components/imageParallel";
 // import SectioParallelImage from "./components/aboutbackgroundComponents";
 
 export default function QuemSomos() {
@@ -108,21 +109,6 @@ export default function QuemSomos() {
                 </Text> */}
               </Text>
             </Stack>
-
-            <Stack direction={{ base: "column", md: "row" }} spacing={4}>
-              <Button
-                as="a"
-                href={whatsappLink}
-                target="_blank" // Abre o link em uma nova aba
-                rel="noopener noreferrer"
-                bg={"red.700"}
-                rounded={"10px"}
-                color={"white"}
-                _hover={{ bg: "red.500" }}
-              >
-                Fale Conosco
-              </Button>
-            </Stack>
           </Stack>
         </Flex>
         <Flex
@@ -144,7 +130,7 @@ export default function QuemSomos() {
           />
         </Flex>
       </Stack>
-      {/* <SectioParallelImage /> */}
+      <SectionSoluctions />
       <Footer />
       <ScrollToTopButton /> {/* Adicionar o botão de "subir" */}
     </>

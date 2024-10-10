@@ -69,7 +69,7 @@ const EvangelismoInfo = () => {
               zIndex: -1,
             }}
           >
-            Batismo
+            Evangelismo
           </Text>
         </MotionHeading>
 

@@ -9,7 +9,7 @@ import {
   Flex,
 } from "@chakra-ui/react";
 import { useNavigate } from "react-router-dom";
-import { FaPhone, FaEnvelope } from "react-icons/fa";
+import { FaPhone, FaEnvelope, FaRegClock } from "react-icons/fa";
 
 const NAV_ITEMS = [
   { label: "Inicio", href: "/" },
@@ -17,7 +17,7 @@ const NAV_ITEMS = [
   { label: "Serviços", href: "/serviços" },
   { label: "Ações", href: "/ações" },
   {
-    label: "Contatos",
+    label: "Contatos +",
     href: "/contact",
     children: [
       {
@@ -29,6 +29,11 @@ const NAV_ITEMS = [
         label: "E-mail",
         href: "mailto:suporte@exemplo.com",
         icon: FaEnvelope,
+      },
+      {
+        label: "Horários",
+        href: "/horarios",
+        icon: FaRegClock,
       },
     ],
   },

@@ -7,6 +7,7 @@ import FaleConosco from "../pages/FaleConosco";
 import QuemSomos from "../pages/Propositos";
 import Serviços from "../pages/Serviços";
 import Ações from "../pages/Ações";
+import Horarios from "../pages/Horarios";
 
 const AppRoutes = () => {
   return (
@@ -15,6 +16,7 @@ const AppRoutes = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<FaleConosco />} />
+        <Route path="/horarios" element={<Horarios />} />
         <Route path="/quemsomos" element={<QuemSomos />} />
         <Route path="/serviços" element={<Serviços />} />
         <Route path="/ações" element={<Ações />} />

@@ -7,6 +7,7 @@ const NAV_ITEMS = [
   { label: "Serviços", href: "/serviços" },
   { label: "Ações", href: "/ações" },
   { label: "Contatos", href: "/contact" },
+  { label: "Horarios", href: "/horarios" },
 ];
 
 export const MobileNav = ({ onToggle }) => {

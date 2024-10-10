@@ -3,12 +3,14 @@ import { Button, Flex, Heading, Image, Stack, Text } from "@chakra-ui/react";
 // import meuHorarioImage from "../../assets/horario.png"; // Substitua pelo caminho da nova imagem
 import Footer from "../Home/components/Footer"; // Certifique-se de que o caminho do Footer esteja correto
 import ScrollToTopButton from "../Home/components/ScrollToTopButton";
+import SectionSoluctions from "../../components/imageParallel";
 // import SectioParallelImage from "./components/aboutbackgroundComponents";
 
 export default function Ações() {
   // Número de telefone e mensagem
   const whatsappNumber = "+5575999194533"; // Substitua pelo número do WhatsApp desejado
-  const whatsappMessage = "Olá, gostaria de saber mais sobre suas ações e serviços.";
+  const whatsappMessage =
+    "Olá, gostaria de saber mais sobre suas ações e serviços.";
 
   // Link para o WhatsApp com o número e a mensagem
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
@@ -81,9 +83,12 @@ export default function Ações() {
                 <Text mt={2}>
                   A Renovame Church está comprometida em fazer a diferença na
                   vida das pessoas através de diversas ações sociais e
-                  espirituais. Nossas atividades incluem: 
+                  espirituais. Nossas atividades incluem:
                   <ul>
-                    <li>Distribuição de alimentos e roupas para comunidades carentes.</li>
+                    <li>
+                      Distribuição de alimentos e roupas para comunidades
+                      carentes.
+                    </li>
                     <li>Oficinas de capacitação e desenvolvimento pessoal.</li>
                     <li>Grupos de apoio e aconselhamento espiritual.</li>
                     <li>Eventos de evangelismo e alcance comunitário.</li>
@@ -112,7 +117,7 @@ export default function Ações() {
               </Text>
             </Stack>
 
-            <Stack direction={{ base: "column", md: "row" }} spacing={4}>
+            {/* <Stack direction={{ base: "column", md: "row" }} spacing={4}>
               <Button
                 as="a"
                 href={whatsappLink}
@@ -125,7 +130,7 @@ export default function Ações() {
               >
                 Fale Conosco
               </Button>
-            </Stack>
+            </Stack> */}
           </Stack>
         </Flex>
         <Flex
@@ -147,6 +152,7 @@ export default function Ações() {
           />
         </Flex>
       </Stack>
+      <SectionSoluctions/>
       {/* <SectioParallelImage /> */}
       <Footer />
       <ScrollToTopButton /> {/* Adicionar o botão de "subir" */}

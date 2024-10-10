@@ -6,7 +6,7 @@ import ScrollToTopButton from "../Home/components/ScrollToTopButton";
 import SectionSoluctions from "../../components/imageParallel";
 // import SectioParallelImage from "./components/aboutbackgroundComponents";
 
-export default function Serviços() {
+export default function Horarios() {
   // Número de telefone e mensagem
   const whatsappNumber = "+5575999194533"; // Substitua pelo número do WhatsApp desejado
   const whatsappMessage = "Olá, gostaria de saber mais sobre seus serviços.";
@@ -41,10 +41,7 @@ export default function Serviços() {
             maxW={"lg"}
             paddingTop={{ base: "40px", md: "90px" }} // Ajusta o padding-top do Stack interno para telas menores
           >
-            <Heading
-              fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}
-              textAlign="left"
-            >
+            <Heading fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}>
               <Text
                 color={"gray.700"}
                 fontWeight={"800"}
@@ -60,66 +57,57 @@ export default function Serviços() {
                   zIndex: -1,
                 }}
               >
-                Serviços
+                Horário de Funcionamento
               </Text>
+              <br />
             </Heading>
-
-            <Text
-              fontSize={{ base: "lg", lg: "xl" }}
-              color={"gray.500"}
-              textAlign="left"
-            >
-              Descubra mais sobre os serviços que oferecemos à comunidade.
+            <Text fontSize={{ base: "lg", lg: "xl" }} color={"gray.500"}>
+              <Stack spacing={5}>
+                <Flex justify="flex-start" w="full">
+                  <Text fontWeight="bold">Segunda:</Text>
+                  <Text ml={2}>FECHADO</Text>
+                </Flex>
+                <Flex justify="flex-start" w="full">
+                  <Text fontWeight="bold">Terça:</Text>
+                  <Text ml={2}>17:00 às 19:30</Text>
+                </Flex>
+                <Flex justify="flex-start" w="full">
+                  <Text fontWeight="bold">Quarta:</Text>
+                  <Text ml={2}>FECHADO</Text>
+                </Flex>
+                <Flex justify="flex-start" w="full">
+                  <Text fontWeight="bold">Quinta:</Text>
+                  <Text ml={2}>FECHADO</Text>
+                </Flex>
+                <Flex justify="flex-start" w="full">
+                  <Text fontWeight="bold">Sexta:</Text>
+                  <Text ml={2}>17:00 às 19:30</Text>
+                </Flex>
+                <Flex justify="flex-start" w="full">
+                  <Text fontWeight="bold">Sábado:</Text>
+                  <Text ml={2}>15:00 às 17:00, 18:00 às 20:00</Text>
+                </Flex>
+                <Flex justify="flex-start" w="full">
+                  <Text fontWeight="bold">Domingo:</Text>
+                  <Text ml={2}>16:00 às 18:00, 18:00 às 21:00</Text>
+                </Flex>
+              </Stack>
             </Text>
 
-            <Stack spacing={2}>
-              <Text
-                fontSize={{ base: "lg", lg: "xl" }}
-                color={"gray.500"}
-                textAlign="left"
+            {/* <Stack direction={{ base: "column", md: "row" }} spacing={4}>
+              <Button
+                as="a"
+                href={whatsappLink}
+                target="_blank" // Abre o link em uma nova aba
+                rel="noopener noreferrer"
+                bg={"red.700"}
+                rounded={"10px"}
+                color={"white"}
+                _hover={{ bg: "red.500" }}
               >
-                <Text fontWeight="bold">Nossos serviços incluem:</Text>
-                <Text mt={2}>
-                  - Cultos Semanais: Adoração e ensino para toda a família.
-                </Text>
-                <Text>
-                  - Estudos Bíblicos: Encontros regulares para aprofundar o
-                  conhecimento das Escrituras.
-                </Text>
-                <Text>
-                  - Atividades para Jovens: Programas especiais focados no
-                  desenvolvimento espiritual dos jovens.
-                </Text>
-                <Text>
-                  - Apoio à Comunidade: Projetos de evangelismo e serviços
-                  sociais para atender as necessidades da comunidade.
-                </Text>
-                <Text>
-                  - Grupos de Conexão: Pequenos grupos para fomentar
-                  relacionamentos e apoio mútuo.
-                </Text>
-                <Text>
-                  - Eventos Especiais: Cultos de celebração, conferências e
-                  encontros de adoração.
-                </Text>
-              </Text>
-
-              <Text
-                fontSize={{ base: "lg", lg: "xl" }}
-                color={"gray.500"}
-                textAlign="left"
-              >
-                <Text fontWeight="bold" textAlign="left" mt={4}>
-                  Onde tudo se faz novo de novo.
-                </Text>
-                <Text textAlign="left" mt={2}>
-                  Pr. Sênior: @joelsonribeirooficial
-                </Text>
-                {/* <Text textAlign="left" mt={2}>
-                  Av. Nóide Cerqueira, 4048.
-                </Text> */}
-              </Text>
-            </Stack>
+                Fale Conosco
+              </Button>
+            </Stack> */}
           </Stack>
         </Flex>
         <Flex
@@ -129,7 +117,7 @@ export default function Serviços() {
           justify={"center"}
           align={"center"}
           py={{ base: "10", md: "0" }} // Adiciona padding vertical para telas menores
-          mt={{ base: "10", md: "0" }} // Adiciona margem superior para empurrar a imagem para baixo em telas menores
+          mt={{ base: "20", md: "65" }} // Aumenta a margem para empurrar a imagem mais para baixo
         >
           <Image
             src="https://yt3.googleusercontent.com/_RkCMGevpVvK62kKaa_RR3GM8Y38Q5lbpSklF9yb5qZSoL17NpICFGFGn9XdgQVPM4BXV5P6Yiw=s900-c-k-c0x00ffffff-no-rj" // Use o caminho da nova imagem
